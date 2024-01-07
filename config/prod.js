@@ -1,0 +1,1 @@
+export const MOGOURI = "mongodb+srv://root:root@password-manager.py7ekej.mongodb.net/";

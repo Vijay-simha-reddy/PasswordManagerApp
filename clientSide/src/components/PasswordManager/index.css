@@ -1,0 +1,154 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .app-container {
+    background: linear-gradient(#9ba9eb, #c3caea);
+    min-height: 100vh;
+    padding: 20px 20px;
+  }
+  .navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 120px;
+  }
+  .logOut{
+    padding: 6px 8px;
+    border: none;
+    cursor: pointer;
+    font-family: "roboto";
+    font-size: 12px;
+    background: linear-gradient(#17243d,#305075);
+    color:#ffffff;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  
+  .app-container-item {
+    background-color: #5763a5;
+    border-radius: 8px;
+    padding: 20px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .spinner-loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+  }
+  .top-container-image {
+    width: 320px;
+    height: 280px;
+  }
+  .managerImage {
+    width: 400px;
+    height: 240px;
+    display: none;
+  }
+  .formInputs {
+    background-color: #454f84;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .main-heading {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'roboto';
+  }
+  .inputImage {
+    width: 24px;
+    border-right: 1px solid #454f84;
+    padding-right: 4px;
+  }
+  .inputBlock {
+    background-color: #ffffff;
+    margin-top: 12px;
+    padding: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+  }
+  input {
+    border: none;
+    outline: none;
+    padding: 2px;
+    margin-left: 4px;
+    width: 240px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'roboto';
+  }
+  .topicInputs{
+width:92%
+  }
+  .adding-button {
+    padding: 6px 24px;
+    background-color: #0b69ff;
+    border: none;
+    color: #f8fafc;
+    margin-top: 12px;
+    float: right;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'roboto';
+  }
+  .non-input{
+    border: 2px solid rgb(168, 50, 50);
+  }
+  
+  @media (min-width: 768px) {
+    .app-container {
+      padding: 20px 60px;
+    }
+    .top-container-image {
+      display: none;
+    }
+    .managerImage {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .app-container-item {
+      flex-direction: row;
+    }
+    .topicInputs {
+      font-size: 16px;
+        width:100%;
+    }
+    .managerImage {
+      width: 400px;
+      height: 300px;
+    }
+    .inputBlock {
+      padding: 10px 6px;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .formInputs {
+      width: 100%;
+    }
+    .form-image {
+      width: 100%;
+    }
+    .managerImage {
+      width: 100%;
+      object-fit: contain;
+    }
+    .topicInputs {
+      width: 92%;
+    }
+  }
+  

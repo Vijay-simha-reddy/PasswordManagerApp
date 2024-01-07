@@ -1,0 +1,250 @@
+.app-container-item1 {
+  background-color: #5763a5;
+  border-radius: 8px;
+  padding: 20px 28px;
+  margin-top: 12px;
+}
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.para {
+  font-size: 16px;
+  color: #f8fafc;
+  font-weight: 500;
+}
+.addCount {
+  display: flex;
+  align-items: center;
+}
+.span {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0px 4px;
+  border-radius: 40%;
+  margin-left: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.checkBox {
+  height: 16px;
+}
+.checkLabel {
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: -100px;
+}
+.checkedBox {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.inputBlockSearch {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 2px;
+  width: 150px;
+  align-self: center;
+  height: 28px;
+}
+.searchImage {
+  width: 22px;
+  margin: 10px;
+}
+.searchInput {
+  width: 98%;
+  font-size: 16px;
+  background-color: transparent;
+  margin-left: -8px;
+}
+
+.userList {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 12px;
+}
+.user-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  width:100%;
+  backdrop-filter: blur(5px) brightness(80%);
+  
+}
+
+.user-data {
+  position:relative;
+  transform: translateX(-50%);
+  animation: dropSwing 2s ease forwards;
+}
+
+@keyframes dropSwing {
+  from {top: -100px; 
+    transform-origin: top center;
+    transform: translateY(-500px) rotateX(360deg);
+  }
+  to { top: 100%;
+    transform-origin: top center;
+    transform: translateY(0%) rotateX(0deg);
+  }
+
+}
+
+
+.profile {
+  background-color: greenyellow;
+  border-radius: 50%;
+  border: none;
+  padding: 6px 8px;
+}
+
+.profile-info {
+  width:78%;
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-name {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'roboto';
+  font-weight: 500;
+}
+.website-name{
+  color:#10b981
+}
+.website-name,
+.user-name {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'roboto';
+  overflow-x: auto;
+white-space: nowrap; 
+margin: 0;
+padding-bottom: 2px;
+}
+.website-name::-webkit-scrollbar, .user-name::-webkit-scrollbar{
+width: 0px;
+height:0px
+}
+
+
+.passwordImage {
+  width: 120px;
+}
+.website-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dltImage {
+  width: 24px;
+}
+.dlt-profile {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.profile-info {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyImage {
+  width: 220px;
+  height: 180px;
+}
+.info-empty {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'roboto';
+  margin-top: 12px;
+}
+
+.middle-section-section{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 12px;
+}
+.one {
+  background-color: #7683cb;
+}
+.two {
+  background-color: #f59e0b;
+}
+.three {
+  background-color: #10b981;
+}
+.four {
+  background-color: #f97316;
+}
+.five {
+  background-color: #14b8a6;
+}
+.six {
+  background-color: #b91c1c;
+}
+.seven {
+  background-color: #0ea5e9;
+}
+.eight {
+  background-color: #64748b;
+}
+.nine {
+  background-color: #b6c3ca;
+}
+
+@media (min-width: 768px) {
+  .para {
+    font-size: 20px;
+  }
+  .inputBlockSearch {
+    width: 280px;
+  }
+  .profile-info {
+    width: 160px;
+    height: 60px;
+  }
+  .span {
+    font-size: 14px;
+  }
+  .emptyImage {
+    width: 280px;
+    height: 200px;
+  }
+  .info-empty {
+    font-size: 22px;
+  }
+  .user-data{
+      width:254px
+  }
+  .profile-info{
+      width:160px
+  }
+  
+}
+

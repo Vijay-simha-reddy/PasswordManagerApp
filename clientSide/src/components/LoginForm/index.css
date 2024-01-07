@@ -1,0 +1,211 @@
+.login-container{
+    background: linear-gradient(#0077b6,#0096c7);
+    min-height:100vh;
+    display: flex;
+}
+
+.info-section{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#0077b6,#0096c7);
+    padding: 40px;
+}
+.informationLayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.loginIn{
+  margin: 40px 0px;
+  align-self: center;
+    width:280px;
+    height:240px;
+    position: relative;
+  animation: moveUpDown 2s infinite alternate;
+}
+.signIn{
+  width:320px;
+  height:320px;
+  position: relative;
+animation: moveUpDown 2s infinite alternate;
+}
+@keyframes moveUpDown {
+    
+    0% {
+      transform: translateY(0); 
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+.form-content{
+    font-family: "Bree Serif", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color:#ffffff
+}
+
+.register-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    padding:46px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    background-color: aliceblue;
+    padding-top: 6%;
+}
+.register-heading{
+    font-size: 38px;
+    font-family: "roboto";
+}
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+.login-sign-inputs{
+    font-family: "roboto";
+    align-self: center;
+    font-size: 18px;
+    margin-bottom: 12px;
+    width:82%;
+    border-bottom: 1px solid rgb(54, 51, 51);
+    background-color: transparent;
+}
+.login-sign-button{
+    align-self:center;
+    margin-top: 18px;
+    background: linear-gradient(#0077b6,#0096c7);
+    padding: 8px 0px;
+    border: none;
+    border-radius: 12px;
+    color:#ffffff;
+    font-family: "roboto" ;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    width:82%;
+}
+.bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 84%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.line {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color:rgb(199, 198, 198);
+  margin-top: 4px;
+}
+
+span {
+  margin: 0 10px;
+  font-weight: 500;
+  color:gray
+}
+
+.account-info, .link{
+    font-family: "roboto";
+    font-size: 16px;
+    color:#092c3e
+}
+.link{
+    color:rgb(48, 113, 212);
+    cursor:pointer
+}
+
+.error-indicator{
+  color:red;
+  font-size: 12px;
+  font-family: "roboto";
+  margin-left: 10%;
+}
+.registerStatus{
+  color:red;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+ text-align: center;
+}
+
+@media (min-width: 767px) and (max-width: 890px) {
+  .login-sign-inputs, .login-sign-button {
+    width: 100%;
+    padding: 8px;
+  }
+  .register-section{
+    padding: 34px;
+  }
+  .bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .line {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color:rgb(199, 198, 198);
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 766px) {
+  .login-sign-inputs, .login-sign-button {
+    width: 100%;
+    padding: 4px;
+  }
+  .login-container{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Adjust container width as needed */
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.line {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color:rgb(199, 198, 198);
+  margin-top: 4px;
+}
+.info-section{
+  width:100%;
+}
+.register-section{
+  width:100%;
+  border-radius: 0px;
+}
+.register-heading{
+  font-size: 30px;
+}
+.login-sign-inputs{
+font-size: 16px;
+margin-bottom: 8px;
+}
+.register-section{
+padding: 20px 28px;
+}
+}
