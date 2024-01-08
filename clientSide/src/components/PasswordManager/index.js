@@ -40,6 +40,7 @@ class PasswordManagerUser extends Component {
     const { params } = match;
     const userId = params.userId; 
     console.log(userId);
+    console.log("shsdgcgcsgg")
     this.setState({ userLoginId: userId }, () => {
       this.getFetchUserDetails();
     });
@@ -134,6 +135,7 @@ class PasswordManagerUser extends Component {
 
 
   getFetchUserDetails = async () => {
+    console.log("not-fousdfhgh")
     const { userLoginId } = this.state;
     const apiUrl = `${window.location.origin}/user/${userLoginId}/details`;
     const jwtToken = Cookie.get('jwt_token');
@@ -298,8 +300,7 @@ class PasswordManagerUser extends Component {
   };
 
   render() {
-    const { loading } = this.state;
-
+    const { loading} = this.state;
     return (
       <>
         {loading ? (

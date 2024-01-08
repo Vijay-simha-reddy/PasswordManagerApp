@@ -175,6 +175,16 @@ span {
     display: flex;
     flex-direction: column;
 }
+.form-content{
+  font-size: 22px;
+}
+.loginIn, .signIn{
+  width:200px;
+  height:200px;
+}
+.register-section{
+ height:416px
+}
 .bottom-section {
   display: flex;
   align-items: center;
@@ -193,6 +203,7 @@ span {
 }
 .info-section{
   width:100%;
+  padding: 20px;
 }
 .register-section{
   width:100%;

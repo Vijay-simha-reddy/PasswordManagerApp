@@ -120,10 +120,11 @@ app.delete('/user/:userId/password/:passwordId', async (req, res) => {
 });
 
 
-app.get("/", (req, res) => {
-  app.use(express.static(path.resolve(__dirname, "./clientSide", "build")));
-  res.sendFile(path.resolve(__dirname, "./clientSide", "build", "index.html"));
-  });
+app.use(express.static(path.resolve(__dirname, './clientSide/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './clientSide/build', 'index.html'));
+});
 
 app.listen(process.env.PORT||5555, () => {
   console.log(`App running on port 5555`);
